@@ -71,7 +71,7 @@
             }
           },
           {
-            title: 'ID',
+            title: 'Code',
             align: 'center',
             render: (h, params) => {
               if (params.row.show_link) {
@@ -85,9 +85,9 @@
                       this.$router.push('/status/' + params.row.id)
                     }
                   }
-                }, params.row.id.slice(0, 12))
+                }, 'View') // params.row.id.slice(0, 12))
               } else {
-                return h('span', params.row.id.slice(0, 12))
+                return h('span', 'Don\'t View') // params.row.id.slice(0, 12))
               }
             }
           },

@@ -28,8 +28,7 @@
             <Input v-model="query.keyword"
                    @on-enter="filterByKeyword"
                    @on-click="filterByKeyword"
-                   placeholder="keyword"
-                   icon="ios-search-strong"/>
+                   placeholder="keyword"/>
           </li>
           <li>
             <Button type="info" @click="onReset">

@@ -80,9 +80,29 @@ export default {
           this.columns.splice(2, 0, {
             title: 'RealName',
             align: 'center',
-            width: '150px',
+       //     width: '150px',
             render: (h, {row}) => {
               return h('span', row.user.real_name)
+            }
+          })
+        } else {
+          this.columns.splice(2, 1)
+        }
+      }
+    },
+    showSchool: {
+      get () {
+        return this.$store.state.contest.itemVisible.school
+      },
+      set (value) {
+        this.$store.commit(types.CHANGE_CONTEST_ITEM_VISIBLE, {school: value})
+        if (value) {
+          this.columns.splice(2, 0, {
+            title: 'School',
+            align: 'center',
+         //   width: '150px',
+            render: (h, {row}) => {
+              return h('span', row.user.school)
             }
           })
         } else {

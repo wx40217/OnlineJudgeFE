@@ -70,8 +70,7 @@
     <Panel>
       <span slot="title">{{$t('m.Import_User')}}
         <el-popover placement="right" trigger="hover">
-          <p>Only support csv file without headers, check the <a
-            href="http://docs.onlinejudge.me/#/onlinejudge/guide/import_users">link</a> for details</p>
+          <p>Only support csv file without headers, in the format of username,password,email,realname,school,mood.</p>
           <i slot="reference" class="el-icon-fa-question-circle import-user-icon"></i>
         </el-popover>
       </span>
@@ -97,6 +96,21 @@
           <el-table-column label="Email">
             <template slot-scope="{row}">
               {{row[2]}}
+            </template>
+          </el-table-column>
+          <el-table-column label="RealName">
+            <template slot-scope="{row}">
+              {{row[3]}}
+            </template>
+          </el-table-column>
+          <el-table-column label="School">
+            <template slot-scope="{row}">
+              {{row[4]}}
+            </template>
+          </el-table-column>
+          <el-table-column label="Seat">
+            <template slot-scope="{row}">
+              {{row[5]}}
             </template>
           </el-table-column>
         </el-table>

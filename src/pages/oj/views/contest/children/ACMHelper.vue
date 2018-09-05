@@ -96,6 +96,18 @@
             }
           },
           {
+            title: 'Seat',
+            align: 'center',
+            render: (h, {row}) => {
+              return h('span', {
+                style: {
+                  display: 'inline-block',
+                  'max-width': '150px'
+                }
+              }, row.mood)
+            }
+          },
+          {
             title: 'Status',
             align: 'center',
             render: (h, {row}) => {

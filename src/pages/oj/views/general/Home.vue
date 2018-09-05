@@ -49,9 +49,17 @@
       }
     },
     mounted () {
-      let params = {status: CONTEST_STATUS.NOT_START}
-      api.getContestList(0, 5, params).then(res => {
-        this.contests = res.data.data.results
+      let params1 = {status: CONTEST_STATUS.UNDERWAY}
+      let params2 = {status: CONTEST_STATUS.NOT_START}
+      let another = api.getContestList(0, 5, params2)
+      api.getContestList(0, 5, params1).then(res => {
+        if (res.data.data.results.length) {
+          this.contests = res.data.data.results.reverse()
+        } else {
+          another.then(res => {
+            this.contests = res.data.data.results.reverse()
+          })
+        }
       })
     },
     methods: {

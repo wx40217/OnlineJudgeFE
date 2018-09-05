@@ -16,10 +16,15 @@
             <span>Auto Refresh(10s)</span>
             <i-switch :disabled="refreshDisabled" @on-change="handleAutoRefresh"></i-switch>
           </p>
-          <p v-if="isContestAdmin">
+          <!--p v-if="isContestAdmin"-->
+          <p>
             <span>RealName</span>
             <i-switch v-model="showRealName"></i-switch>
           </p>
+          <p>
+             <span>School</span>
+             <i-switch v-model="showSchool"></i-switch>
+           </p>
           <p>
             <Button type="primary" size="small" @click="downloadRankCSV">download csv</Button>
           </p>
@@ -52,6 +57,7 @@
     },
     mixins: [ContestRankMixin],
     data () {
+      var stars = 0
       return {
         total: 0,
         page: 1,
@@ -61,7 +67,15 @@
             align: 'center',
             width: 60,
             render: (h, params) => {
-              return h('span', {}, params.index + (this.page - 1) * this.limit + 1)
+              if (params.row.user.real_name !== null && params.row.user.real_name[0] === '*') {
+                stars += 1
+                return h('span', {}, '-')
+              } else {
+                if (params.index + (this.page - 1) * this.limit + 1 - stars <= 0) {
+                  stars = 0
+                }
+                return h('span', {}, params.index + (this.page - 1) * this.limit + 1 - stars)
+              }
             }
           },
           {
