@@ -1,7 +1,7 @@
 <template>
   <div>
     <panel class="container">
-      <div slot="title">Compiler & Judger</div>
+      <div slot="title">编译器和参数</div>
       <div class="content markdown-body">
         <ul>
           <li v-for="lang in languages">{{lang.name}} ( {{lang.description}} )
@@ -12,7 +12,7 @@
     </panel>
 
     <panel :padding="15" class="container">
-      <div slot="title">Result Explanation</div>
+      <div slot="title">结果解释</div>
       <div class="content">
         <ul>
           <li><b>Pending & Juding</b> : {{$t('m.Pending_Juding')}}</li>
