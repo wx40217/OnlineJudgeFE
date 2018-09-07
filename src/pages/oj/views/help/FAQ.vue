@@ -3,8 +3,8 @@
     <div slot="title">{{$t('m.Frequently_Asked_Questions')}}</div>
     <div class="content markdown-body">
       <ul>
-        <li>Where is the input and the output?
-          <p>Your program shall read input from <code>stdin</code>('Standard Input') and write output to <code>stdout</code>('Standard Output').
+        <li>输入输出在哪里？
+          <p>你的程序应该从 <code>stdin</code>('标准输入') 获得输入， 把输出写到 <code>stdout</code>('标准输出')中.
             For example,you can use <code>scanf</code> in C or <code>cin</code> in C++ to read from stdin,and use <code>printf</code> in C or <code>cout</code> in C++ to write to stdout.
             User programs are not allowed to read or write files, or you will get a <code>Runtime Error</code>.
           </p>
