@@ -2,7 +2,7 @@
   <div class="flex-container">
     <div id="main">
       <Panel shadow>
-        <div slot="title">{{title}}</div>
+        <div slot="title">状态</div>
         <div slot="extra">
           <ul class="filter">
             <li>
@@ -11,7 +11,7 @@
                   <Icon type="arrow-down-b"></Icon>
                 </span>
                 <Dropdown-menu slot="list">
-                  <Dropdown-item name="">All</Dropdown-item>
+                  <Dropdown-item name="">全部</Dropdown-item>
                   <Dropdown-item v-for="status in Object.keys(JUDGE_STATUS)" :key="status" :name="status">
                     {{JUDGE_STATUS[status].name}}
                   </Dropdown-item>
@@ -22,8 +22,8 @@
 
             <li>
               <i-switch size="large" v-model="formFilter.myself" @on-change="handleQueryChange">
-                <span slot="open">Mine</span>
-                <span slot="close">All</span>
+                <span slot="open">我的</span>
+                <span slot="close">全部</span>
               </i-switch>
             </li>
             <li>
@@ -64,14 +64,14 @@
         },
         columns: [
           {
-            title: 'When',
+            title: '时间',
             align: 'center',
             render: (h, params) => {
               return h('span', time.utcToLocal(params.row.create_time))
             }
           },
           {
-            title: 'Code',
+            title: '代码',
             align: 'center',
             render: (h, params) => {
               if (params.row.show_link) {
@@ -92,7 +92,7 @@
             }
           },
           {
-            title: 'Status',
+            title: '状态',
             align: 'center',
             render: (h, params) => {
               return h('Tag', {
@@ -103,7 +103,7 @@
             }
           },
           {
-            title: 'Problem',
+            title: '问题',
             align: 'center',
             render: (h, params) => {
               return h('span',
@@ -130,26 +130,26 @@
             }
           },
           {
-            title: 'Time',
+            title: '耗时',
             align: 'center',
             render: (h, params) => {
               return h('span', utils.submissionTimeFormat(params.row.statistic_info.time_cost))
             }
           },
           {
-            title: 'Memory',
+            title: '内存',
             align: 'center',
             render: (h, params) => {
               return h('span', utils.submissionMemoryFormat(params.row.statistic_info.memory_cost))
             }
           },
           {
-            title: 'Language',
+            title: '语言',
             align: 'center',
             key: 'language'
           },
           {
-            title: 'Author',
+            title: '作者',
             align: 'center',
             render: (h, params) => {
               return h('a', {
