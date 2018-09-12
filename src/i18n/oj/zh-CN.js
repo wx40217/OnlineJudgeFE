@@ -103,8 +103,8 @@ export const m = {
   List_Solved_Problems: '已解决问题的列表',
   UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
   // ACMrank.vue
-  ACM_Ranklist: 'ACM榜单',
+  ACM_Ranklist: 'ACM排名',
   accepted_number: '通过',
   // OIrank.vue
-  OI_Ranklist: 'OI榜单'
+  OI_Ranklist: 'OI排名'
 }
