@@ -42,7 +42,7 @@
             }
           },
           {
-            title: 'user',
+            title: 'User',
             align: 'center',
             render: (h, params) => {
               return h('a', {
@@ -63,12 +63,12 @@
             }
           },
           {
-            title: 'mood',
+            title: 'Mood',
             align: 'center',
             key: 'mood'
           },
           {
-            title: {{$t('m.accepted_number')}},
+            title: 'AC',
             align: 'center',
             key: 'accepted_number'
           },

@@ -1,7 +1,7 @@
 <template>
   <div>
     <panel class="container">
-      <div slot="title">Compiler & Judger</div>
+      <div slot="title">编译器和参数</div>
       <div class="content markdown-body">
         <ul>
           <li v-for="lang in languages">{{lang.name}} ( {{lang.description}} )
