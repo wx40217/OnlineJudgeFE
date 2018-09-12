@@ -2,7 +2,7 @@
   <Row type="flex" justify="space-around">
     <Col :span="22">
     <Panel :padding="10">
-      <div slot="title">ACM 排名</div>
+      <div slot="title">{{$t('m.ACM_Ranklist')}}</div>
       <div class="echarts">
         <ECharts :options="options" ref="chart" auto-resize></ECharts>
       </div>
@@ -42,7 +42,7 @@
             }
           },
           {
-            title: '用户',
+            title: 'User',
             align: 'center',
             render: (h, params) => {
               return h('a', {
@@ -63,17 +63,17 @@
             }
           },
           {
-            title: 'mood',
+            title: 'Mood',
             align: 'center',
             key: 'mood'
           },
           {
-            title: '通过',
+            title: 'AC',
             align: 'center',
             key: 'accepted_number'
           },
           {
-            title: '总计',
+            title: 'Total',
             align: 'center',
             key: 'submission_number'
           },

@@ -12,7 +12,7 @@
     </panel>
 
     <panel :padding="15" class="container">
-      <div slot="title">结果解释</div>
+      <div slot="title">{{$t('m.Result_Explanation')}}</div>
       <div class="content">
         <ul>
           <li><b>Pending & Juding</b> : {{$t('m.Pending_Juding')}}</li>
