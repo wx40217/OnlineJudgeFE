@@ -101,5 +101,10 @@ export const m = {
   UserHomeserSubmissions: '提交次数',
   UserHomeScore: '分数',
   List_Solved_Problems: '已解决问题的列表',
-  UserHomeIntro: '这个家伙太懒了，还没有做题呢...'
+  UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
+  // ACMrank.vue
+  ACM_Ranklist: 'ACM榜单',
+  accepted_number: '通过',
+  // OIrank.vue
+  OI_Ranklist: 'OI榜单'
 }
