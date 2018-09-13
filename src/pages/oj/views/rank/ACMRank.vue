@@ -68,7 +68,7 @@
             key: 'mood'
           },
           {
-            title: {{$t('m.accepted_number')}},
+            title: 'AC',
             align: 'center',
             key: 'accepted_number'
           },
