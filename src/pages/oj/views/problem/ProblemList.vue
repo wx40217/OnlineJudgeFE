@@ -8,7 +8,7 @@
         <ul class="filter">
           <li>
             <Dropdown @on-click="filterByDifficulty">
-              <span>{{query.difficulty === '' ? 'Difficulty' : query.difficulty}}
+              <span>{{query.difficulty === '' ? $t('m.Difficulty') : query.difficulty}}
                 <Icon type="arrow-down-b"></Icon>
               </span>
               <Dropdown-menu slot="list">

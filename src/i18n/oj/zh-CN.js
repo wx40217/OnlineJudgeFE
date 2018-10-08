@@ -29,6 +29,7 @@ export const m = {
   Problem_list: '题目列表',
   Pick_one: '随机选择',
   Reset: '重置',
+  Difficulty: '难度',
   // About.vue
   Result_Explanation: '结果解释',
   Pending_Juding: '您的解答将很快被测评，请等待结果。',
@@ -119,5 +120,10 @@ export const m = {
   ACM_Ranklist: 'ACM榜单',
   AC: '通过',
   // OIrank.vue
-  OI_Ranklist: 'OI榜单'
+  OI_Ranklist: 'OI榜单',
+  // contestlist.vue
+  Ended: '已结束',
+  UnderWay: '进行中',
+  Not_Started: '未开始',
+  Rule: '规则'
 }
