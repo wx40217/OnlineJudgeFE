@@ -18,7 +18,7 @@ export const m = {
   Show: '显示',
   Submitted_successfully: '提交成功',
   have_solved: '已经解过这道题',
-  have_submitted: '已经提交过该解',
+  have_submitted: '已经提交过该题',
   ended: '比赛已经结束',
   Statistic: '数据',
   //  ProblemList.vue
@@ -117,10 +117,10 @@ export const m = {
   List_Solved_Problems: '已解决问题的列表',
   UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
   // ACMrank.vue
-  ACM_Ranklist: 'ACM榜单',
+  ACM_Ranklist: 'ACM排名',
   AC: '通过',
   // OIrank.vue
-  OI_Ranklist: 'OI榜单',
+  OI_Ranklist: 'OI排名',
   // contestlist.vue
   Ended: '已结束',
   UnderWay: '进行中',
