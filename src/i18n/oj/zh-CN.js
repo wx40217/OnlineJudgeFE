@@ -16,6 +16,20 @@ export const m = {
   Score: '分数',
   Tags: '标签',
   Show: '显示',
+  Submitted_successfully: '提交成功',
+  have_solved: '已经解过这道题',
+  have_submitted: '已经提交过该题',
+  ended: '比赛已经结束',
+  Statistic: '数据',
+  //  ProblemList.vue
+  All: '全部',
+  Low: '低',
+  Mid: '中',
+  High: '高',
+  Problem_list: '题目列表',
+  Pick_one: '随机选择',
+  Reset: '重置',
+  Difficulty: '难度',
   // About.vue
   Result_Explanation: '结果解释',
   Pending_Juding: '您的解答将很快被测评，请等待结果。',
@@ -104,7 +118,12 @@ export const m = {
   UserHomeIntro: '这个家伙太懒了，还没有做题呢...',
   // ACMrank.vue
   ACM_Ranklist: 'ACM排名',
-  accepted_number: '通过',
+  AC: '通过',
   // OIrank.vue
-  OI_Ranklist: 'OI排名'
+  OI_Ranklist: 'OI排名',
+  // contestlist.vue
+  Ended: '已结束',
+  UnderWay: '进行中',
+  Not_Started: '未开始',
+  Rule: '规则'
 }
