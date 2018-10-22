@@ -5,7 +5,9 @@
       <div class="content markdown-body">
         <ul>
           <li v-for="lang in languages">{{lang.name}} ( {{lang.description}} )
-            <pre>{{lang.config.compile.compile_command}}</pre>
+            <pre v-if="lang.name === 'brainfuck'">?</pre>
+            <pre v-else-if="lang.config.compile.compile_command.startsWith('/bin/cp')">{{lang.config.run.command}}</pre>
+            <pre v-else>{{lang.config.compile.compile_command}}</pre>
           </li>
         </ul>
       </div>
