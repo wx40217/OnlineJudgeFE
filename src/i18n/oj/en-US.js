@@ -101,5 +101,31 @@ export const m = {
   UserHomeserSubmissions: 'Submissions',
   UserHomeScore: 'Score',
   List_Solved_Problems: 'List of solved problems',
-  UserHomeIntro: 'The guy is so lazy that has not solved any problem yet.'
+  UserHomeIntro: 'The guy is so lazy that has not solved any problem yet.',
+  // ACMrank.vue
+  ACM_Ranklist: 'ACM Ranklist',
+  AC: 'Accept',
+  No_data: 'No Data',
+  // OIrank.vue
+  OI_Ranklist: 'OI Ranklist',
+  // contestlist.vue
+  All_Contest: 'ACM/OI',
+  Ended: 'Ended',
+  UnderWay: 'UnderWay',
+  Not_Started: 'Not Started',
+  Rule: 'Rule',
+  No_contest: 'No Contest',
+  // 404.vue
+  Go_Home: 'GO Home',
+  // settings.vue
+  change_avatar: 'Change Avatar',
+  //  ProblemList.vue
+  All: 'All',
+  Low: 'Low',
+  Mid: 'Mid',
+  High: 'High',
+  Problem_list: 'Problem List',
+  Pick_one: 'Pick one',
+  Reset: 'Reset',
+  Difficulty: 'Difficulty'
 }
