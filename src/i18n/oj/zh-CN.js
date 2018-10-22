@@ -119,11 +119,17 @@ export const m = {
   // ACMrank.vue
   ACM_Ranklist: 'ACM排名',
   AC: '通过',
+  No_data: '没有数据',
   // OIrank.vue
   OI_Ranklist: 'OI排名',
   // contestlist.vue
   Ended: '已结束',
   UnderWay: '进行中',
   Not_Started: '未开始',
-  Rule: '规则'
+  Rule: '规则',
+  No_contest: '没有比赛',
+  // 404.vue
+  Go_Home: '回到首页',
+  // settings.vue
+  change_avatar: '更改头像'
 }
