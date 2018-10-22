@@ -123,6 +123,7 @@ export const m = {
   // OIrank.vue
   OI_Ranklist: 'OI排名',
   // contestlist.vue
+  All_Contest: 'ACM/OI',
   Ended: '已结束',
   UnderWay: '进行中',
   Not_Started: '未开始',
