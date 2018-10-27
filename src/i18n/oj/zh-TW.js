@@ -16,6 +16,11 @@ export const m = {
   Score: '分數',
   Tags: '標籤',
   Show: '顯示',
+  Submitted_successfully: '提交成功',
+  have_solved: '已經解過該題',
+  have_submitted: '已經提交過該題',
+  ended: '比賽已經結束',
+  Statistic: '數據',
   // About.vue
   Result_Explanation: '結果說明',
   Pending_Juding: '您的答案即將進行評分，請等待結果。',
@@ -56,6 +61,7 @@ export const m = {
   Settings: '我的設定',
   Management: '後台管理',
   Logout: '登出',
+  My: '我的',
   // announcements.vue
   Refresh: '重新整理',
   Back: '返回',
@@ -101,5 +107,31 @@ export const m = {
   UserHomeserSubmissions: '提交次數',
   UserHomeScore: '分數',
   List_Solved_Problems: '已完成題目的列表',
-  UserHomeIntro: '這個使用者尚未解題...'
+  UserHomeIntro: '這個使用者尚未解題...',
+  // ACMrank.vue
+  ACM_Ranklist: 'ACM排名',
+  AC: '通過',
+  No_data: '沒有數據',
+  // OIrank.vue
+  OI_Ranklist: 'OI排名',
+  // contestlist.vue
+  All_Contest: 'ACM/OI',
+  Ended: '已結束',
+  UnderWay: '進行中',
+  Not_Started: '未開始',
+  Rule: '規則',
+  No_contest: '沒有比賽',
+  // 404.vue
+  Go_Home: '回到首頁',
+  // settings.vue
+  change_avatar: '更改頭像',
+  //  ProblemList.vue
+  All: '全部',
+  Low: '低',
+  Mid: '中',
+  High: '高',
+  Problem_list: '問題列表',
+  Pick_one: '隨機選擇',
+  Reset: '重置',
+  Difficulty: '難度'
 }

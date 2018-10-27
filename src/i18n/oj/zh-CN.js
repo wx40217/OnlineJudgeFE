@@ -17,7 +17,7 @@ export const m = {
   Tags: '标签',
   Show: '显示',
   Submitted_successfully: '提交成功',
-  have_solved: '已经解过这道题',
+  have_solved: '已经解过该题',
   have_submitted: '已经提交过该题',
   ended: '比赛已经结束',
   Statistic: '数据',
@@ -70,6 +70,7 @@ export const m = {
   Settings: '我的设置',
   Management: '后台管理',
   Logout: '退出',
+  My: '我的',
   // announcements.vue
   Refresh: '刷新',
   Back: '返回',

@@ -16,6 +16,11 @@ export const m = {
   Score: 'Score',
   Tags: 'Tags',
   Show: 'Show',
+  Submitted_successfully: 'Submitted successfully',
+  have_solved: 'You have solved the problem',
+  have_submitted: 'You have submitted the problem',
+  ended: 'The contest has ended',
+  Statistic: 'Statistic',
   // About.vue
   Result_Explanation: 'Result Explanation',
   Pending_Juding: 'You solution will be judged soon, please wait for result.',
@@ -56,6 +61,7 @@ export const m = {
   Settings: 'Settings',
   Management: 'Management',
   Logout: 'Logout',
+  My: 'My',
   // announcements.vue
   Refresh: 'Refresh',
   Back: 'Back',
