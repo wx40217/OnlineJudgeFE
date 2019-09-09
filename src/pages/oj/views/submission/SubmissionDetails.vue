@@ -134,11 +134,7 @@
           let columns = baseColumn
           if (data.info && data.info.data && !this.isConcat) {
             // score exist means the submission is OI problem submission
-<<<<<<< HEAD
-            if (data.info.data[0].score != null) {
-=======
             if (data.info.data[0].score !== undefined) {
->>>>>>> upstream/master
               this.isConcat = true
               columns = columns.concat(scoreColumn)
             }
